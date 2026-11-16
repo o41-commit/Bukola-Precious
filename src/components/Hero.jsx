@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ProfileImage from "../assets/Profile.jpeg";
 
 const TYPING_PHRASES = [
   "Dark Tales",
@@ -44,8 +45,8 @@ const Hero = () => {
       {/* Background Image with Cinematic Midnight Blue Gradient Overlay */}
       <div aria-hidden="true" className="absolute inset-0 -z-20 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=2000&auto=format&fit=crop"
-          alt=""
+          src={ProfileImage}
+          alt="Profile of Bukola Precious"
           className="h-full w-full object-cover object-center scale-105 motion-safe:animate-[subtle-zoom_20s_ease-in-out_infinite_alternate]"
         />
         {/* Multi-layered deep midnight blue & black vignette for luxury depth */}
