@@ -9,7 +9,7 @@ const Education = () => (
     <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_82%_45%,rgba(56,189,248,.16),transparent_38%),linear-gradient(120deg,#070b19_0%,#0f1d3d_52%,#07111f_100%)]" />
 
     <div className="mx-auto grid max-w-[1120px] gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-center lg:gap-16">
-      <header className="motion-safe:animate-[works-rise_.8s_cubic-bezier(.16,1,.3,1)_both]">
+      <header data-scroll-reveal>
         <div className="mb-5 font-sans text-[10px] font-semibold uppercase tracking-[.36em] text-[#38bdf8]">
           The foundations
         </div>
@@ -25,7 +25,10 @@ const Education = () => (
         </p>
       </header>
 
-      <article className="group relative overflow-hidden rounded-[28px] bg-[#070b19]/75 p-6 shadow-[0_20px_60px_rgba(0,0,0,.28)] backdrop-blur-sm transition duration-500 hover:shadow-[0_24px_70px_rgba(0,0,0,.38)] sm:p-10 motion-safe:animate-[works-rise_.95s_cubic-bezier(.16,1,.3,1)_both]">
+      <article
+        data-scroll-reveal="right"
+        className="group relative overflow-hidden rounded-[28px] bg-[#070b19]/75 p-6 shadow-[0_20px_60px_rgba(0,0,0,.28)] backdrop-blur-sm transition duration-500 hover:shadow-[0_24px_70px_rgba(0,0,0,.38)] sm:p-10"
+      >
         <div className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-[#bae6fd] via-[#38bdf8] to-transparent" />
 
         <div className="relative flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between sm:gap-6">

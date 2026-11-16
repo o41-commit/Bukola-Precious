@@ -24,7 +24,7 @@ const Testimonials = () => (
     <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_20%_35%,rgba(56,189,248,.18),transparent_42%),linear-gradient(125deg,#070b19_0%,#0f1d3d_52%,#07111f_100%)]" />
 
     <div className="mx-auto max-w-[1120px]">
-      <header className="mb-10 text-center motion-safe:animate-[works-rise_.8s_cubic-bezier(.16,1,.3,1)_both] sm:mb-14">
+      <header data-scroll-reveal className="mb-10 text-center sm:mb-14">
         <p className="mb-3 font-sans text-[10px] font-semibold uppercase tracking-[.4em] text-[#38bdf8]">From one reader to another</p>
         <h2 id="testimonials-title" className="m-0 text-[clamp(42px,6vw,72px)] font-bold leading-tight text-[#38bdf8]">Words That <span className="text-white">Stay</span></h2>
         <p className="mx-auto mb-0 mt-4 max-w-2xl font-['Roboto_Slab',Georgia,serif] text-base leading-relaxed text-[#e2e8f0]/80 sm:text-lg">
@@ -33,7 +33,7 @@ const Testimonials = () => (
       </header>
 
       <div className="grid items-stretch gap-6 lg:grid-cols-[1.05fr_.95fr] lg:gap-8">
-        <div className="relative flex min-h-[390px] flex-col justify-between overflow-hidden rounded-sm bg-[#070b19]/70 p-7 shadow-[0_0_25px_5px_rgba(3,5,12,.45)] sm:min-h-[500px] sm:p-11 motion-safe:animate-[works-rise_.9s_cubic-bezier(.16,1,.3,1)_both]">
+        <div data-scroll-reveal="left" className="relative flex min-h-[390px] flex-col justify-between overflow-hidden rounded-sm bg-[#070b19]/70 p-7 shadow-[0_0_25px_5px_rgba(3,5,12,.45)] sm:min-h-[500px] sm:p-11">
           <span className="absolute -right-2 -top-20 font-serif text-[300px] leading-none text-[#38bdf8]/[.08]" aria-hidden="true">“</span>
           <div className="relative">
             <div className="mb-8 flex items-center gap-3 text-[#38bdf8]">
@@ -55,8 +55,9 @@ const Testimonials = () => (
           {reviews.map((review, index) => (
             <figure
               key={review.byline}
-              className="group relative m-0 flex min-h-[156px] flex-1 flex-col justify-center overflow-hidden bg-[#38bdf8] px-6 py-6 text-[#0b1329] shadow-[0_0_15px_5px_rgba(3,5,12,.45)] transition duration-500 hover:-translate-x-1 hover:bg-[#60a5fa] sm:px-8 motion-safe:animate-[works-rise_.85s_cubic-bezier(.16,1,.3,1)_both]"
-              style={{ animationDelay: `${index * 120}ms` }}
+              data-scroll-reveal="right"
+              className="group relative m-0 flex min-h-[156px] flex-1 flex-col justify-center overflow-hidden bg-[#38bdf8] px-6 py-6 text-[#0b1329] shadow-[0_0_15px_5px_rgba(3,5,12,.45)] transition duration-500 hover:-translate-x-1 hover:bg-[#60a5fa] sm:px-8"
+              style={{ "--scroll-delay": `${index * 110}ms` }}
             >
               <span className="absolute -right-2 -top-5 font-serif text-[110px] leading-none text-[#0f1d3d]/10 transition-transform duration-500 group-hover:scale-110" aria-hidden="true">”</span>
               <blockquote className="relative m-0 font-['Roboto_Slab',Georgia,serif] text-base font-semibold italic leading-[1.7] sm:text-[17px]">

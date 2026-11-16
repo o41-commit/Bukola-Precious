@@ -84,7 +84,7 @@ const Skills = () => {
 
       <div className="mx-auto max-w-[1200px]">
         {/* Section Header */}
-        <header className="mb-12 max-w-[760px] motion-safe:animate-[works-rise_.8s_cubic-bezier(.16,1,.3,1)_both] sm:mb-16">
+        <header data-scroll-reveal className="mb-12 max-w-[760px] sm:mb-16">
           <div className="mb-5 inline-flex items-center gap-3.5 text-[#38bdf8]">
             <span className="h-px w-12 bg-gradient-to-r from-transparent to-[#38bdf8]" />
             <span className="text-[10px]">◆</span>
@@ -117,7 +117,8 @@ const Skills = () => {
           {/* Card 01: Expertise */}
           <section
             aria-labelledby="expertise-title"
-            className="group/card relative overflow-hidden rounded-[30px] bg-gradient-to-b from-[#0b1831]/90 to-[#070b19]/90 p-5 shadow-[0_24px_60px_rgba(0,0,0,.35)] backdrop-blur-md transition-colors duration-500 motion-safe:animate-[works-rise_.9s_cubic-bezier(.16,1,.3,1)_100ms_both] sm:p-8"
+            data-scroll-reveal="left"
+            className="group/card relative overflow-hidden rounded-[30px] bg-gradient-to-b from-[#0b1831]/90 to-[#070b19]/90 p-5 shadow-[0_24px_60px_rgba(0,0,0,.35)] backdrop-blur-md transition-colors duration-500 sm:p-8"
           >
             {/* Top Subtle Corner Glow */}
             <div
@@ -150,8 +151,8 @@ const Skills = () => {
                 return (
                   <li
                     key={skill.short}
-                    style={{ animationDelay: `${180 + index * 65}ms` }}
-                    className="motion-safe:animate-[works-rise_.7s_cubic-bezier(.16,1,.3,1)_both]"
+                    data-scroll-reveal
+                    style={{ "--scroll-delay": `${index * 55}ms` }}
                   >
                     <button
                       type="button"
@@ -239,7 +240,8 @@ const Skills = () => {
           {/* Card 02: Tools */}
           <section
             aria-labelledby="tools-title"
-            className="group/tools relative flex flex-col justify-between overflow-hidden rounded-[30px] bg-gradient-to-br from-[#2563eb] via-[#1d4ed8] to-[#1e3a8a] p-5 shadow-[0_24px_60px_rgba(0,0,0,.35)] transition-all duration-500 motion-safe:animate-[works-rise_1s_cubic-bezier(.16,1,.3,1)_220ms_both] sm:p-8"
+            data-scroll-reveal="right"
+            className="group/tools relative flex flex-col justify-between overflow-hidden rounded-[30px] bg-gradient-to-br from-[#2563eb] via-[#1d4ed8] to-[#1e3a8a] p-5 shadow-[0_24px_60px_rgba(0,0,0,.35)] transition-all duration-500 sm:p-8"
           >
             {/* Decorative Concentric Arcs */}
             <div className="relative">
@@ -268,8 +270,8 @@ const Skills = () => {
                   return (
                     <li
                       key={tool}
-                      style={{ animationDelay: `${300 + index * 70}ms` }}
-                      className="motion-safe:animate-[works-rise_.7s_cubic-bezier(.16,1,.3,1)_both]"
+                      data-scroll-reveal
+                      style={{ "--scroll-delay": `${index * 60}ms` }}
                     >
                       <span
                         className={`inline-flex min-h-11 items-center gap-2.5 rounded-full px-4 py-2 font-sans text-sm transition-all duration-300 ${

@@ -21,7 +21,10 @@ const About = () => (
         <div className="relative z-10 max-w-[610px]">
 
           {/* Heading + Quill Emblem */}
-          <div className="mb-7 flex flex-wrap items-center gap-4 sm:gap-5 motion-safe:animate-[about-rise_.85s_cubic-bezier(.16,1,.3,1)_100ms_both]">
+          <div
+            data-scroll-reveal="up"
+            className="mb-7 flex flex-wrap items-center gap-4 sm:gap-5"
+          >
             <h2
               id="about-title"
               className="m-0 bg-gradient-to-r from-[#f0f9ff] via-[#bae6fd] to-[#38bdf8] bg-clip-text text-[clamp(40px,7vw,68px)] font-bold leading-[1.08] tracking-[-.04em] text-transparent drop-shadow-[0_4px_20px_rgba(56,189,248,0.2)]"
@@ -51,29 +54,29 @@ const About = () => (
 
           {/* Structured Editorial Copy */}
           <div className="space-y-4 font-['Roboto_Slab',Georgia,serif] text-[14.5px] leading-[1.82] text-[#e2e8f0]/90 sm:text-[15.5px] sm:leading-[1.88]">
-            <p className="m-0 motion-safe:animate-[about-rise_.85s_cubic-bezier(.16,1,.3,1)_240ms_both]">
+            <p data-scroll-reveal style={{ "--scroll-delay": "80ms" }} className="m-0">
               I work with <span className="font-semibold text-[#bae6fd]">SaaS and AI companies</span> to turn complex products into content that readers understand and use: product documentation, explainers, case studies, long-form guides, and blog articles.
             </p>
 
-            <p className="m-0 motion-safe:animate-[about-rise_.85s_cubic-bezier(.16,1,.3,1)_320ms_both]">
+            <p data-scroll-reveal style={{ "--scroll-delay": "140ms" }} className="m-0">
               My background in <span className="font-semibold text-white">Mass Communication</span> means I know how to shape a message for a specific audience. I&apos;ve built my SaaS and AI expertise through hands-on experience, which means I can follow the technical details and explain them clearly to both business readers and engineers.
             </p>
 
-            <p className="m-0 motion-safe:animate-[about-rise_.85s_cubic-bezier(.16,1,.3,1)_400ms_both]">
+            <p data-scroll-reveal style={{ "--scroll-delay": "200ms" }} className="m-0">
               I don&apos;t simplify by stripping out depth. I give complex ideas a clear thread, from the problem to the solution, so readers understand not just what your product does, but why it matters and how it fits into their workflow.
             </p>
 
-            <p className="m-0 motion-safe:animate-[about-rise_.85s_cubic-bezier(.16,1,.3,1)_480ms_both]">
+            <p data-scroll-reveal style={{ "--scroll-delay": "260ms" }} className="m-0">
               The result is content that helps users get value faster and positions your product as the obvious choice in your space.
             </p>
 
-            <p className="m-0 pt-1 font-medium text-[#bae6fd] motion-safe:animate-[about-rise_.85s_cubic-bezier(.16,1,.3,1)_560ms_both]">
+            <p data-scroll-reveal style={{ "--scroll-delay": "320ms" }} className="m-0 pt-1 font-medium text-[#bae6fd]">
               If you&apos;re building a SaaS or AI product and need a writer who gets both the tech and the story, you are in the right place.
             </p>
           </div>
 
           {/* Premium Pill CTA */}
-          <div className="mt-8 motion-safe:animate-[about-rise_.85s_cubic-bezier(.16,1,.3,1)_640ms_both]">
+          <div data-scroll-reveal style={{ "--scroll-delay": "380ms" }} className="mt-8">
             <a
               href="#works"
               className="group inline-flex items-center gap-3 rounded-full bg-[#070b19]/60 px-6 py-3 text-[11px] font-semibold uppercase tracking-[.22em] text-[#bae6fd] no-underline shadow-[0_8px_25px_rgba(0,0,0,0.3)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#38bdf8] hover:text-[#050814]"
@@ -105,7 +108,10 @@ const About = () => (
       </div>
 
       {/* Right Column: Editorial Portrait */}
-      <div className="group relative min-h-[520px] overflow-hidden lg:min-h-full motion-safe:animate-[about-image-in_1.1s_cubic-bezier(.16,1,.3,1)_both]">
+      <div
+        data-scroll-reveal="right"
+        className="group relative min-h-[520px] overflow-hidden lg:min-h-full"
+      >
         <img
           src={ProfileImage}
           alt="Editorial portrait of Bukola Precious"

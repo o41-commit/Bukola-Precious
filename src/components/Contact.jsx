@@ -97,7 +97,7 @@ const Contact = () => {
 
       <div className="mx-auto grid max-w-[1200px] gap-12 lg:grid-cols-[1fr_1.05fr] lg:items-center lg:gap-14">
         {/* Left Editorial Column */}
-        <div className="motion-safe:animate-[works-rise_.85s_cubic-bezier(.16,1,.3,1)_both]">
+        <div data-scroll-reveal="left">
 
 
           <div className="mb-5 flex items-center gap-3.5 text-[#38bdf8]">
@@ -139,7 +139,10 @@ const Contact = () => {
         </div>
 
         {/* Right Sculpted Blue Contact Card */}
-        <div className="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#132a52] via-[#0f1d3d] to-[#070b19] p-6 text-[#e2e8f0] shadow-[0_28px_70px_rgba(0,0,0,.55)] motion-safe:animate-[works-rise_1s_cubic-bezier(.16,1,.3,1)_140ms_both] sm:p-9">
+        <div
+          data-scroll-reveal="right"
+          className="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#132a52] via-[#0f1d3d] to-[#070b19] p-6 text-[#e2e8f0] shadow-[0_28px_70px_rgba(0,0,0,.55)] sm:p-9"
+        >
           <div className="relative">
             <div className="flex items-start justify-between gap-4">
               <div>
