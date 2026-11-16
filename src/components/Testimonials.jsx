@@ -19,10 +19,9 @@ const Testimonials = () => (
   <section
     id="testimonials"
     aria-labelledby="testimonials-title"
-    className="relative isolate min-h-[760px] overflow-hidden border-y-[10px] border-[#38bdf8] bg-[#0f1d3d] px-5 py-16 text-[#bae6fd] sm:px-8 sm:py-20 lg:min-h-[913px]"
+    className="relative isolate min-h-[760px] overflow-hidden bg-[#0f1d3d] px-5 py-16 text-[#bae6fd] sm:px-8 sm:py-20 lg:min-h-[913px]"
   >
     <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_20%_35%,rgba(56,189,248,.18),transparent_42%),linear-gradient(125deg,#070b19_0%,#0f1d3d_52%,#07111f_100%)]" />
-    <div className="pointer-events-none absolute -left-32 bottom-0 -z-10 size-[440px] rounded-full border border-[#38bdf8]/10" />
 
     <div className="mx-auto max-w-[1120px]">
       <header className="mb-10 text-center motion-safe:animate-[works-rise_.8s_cubic-bezier(.16,1,.3,1)_both] sm:mb-14">
@@ -34,7 +33,7 @@ const Testimonials = () => (
       </header>
 
       <div className="grid items-stretch gap-6 lg:grid-cols-[1.05fr_.95fr] lg:gap-8">
-        <div className="relative flex min-h-[390px] flex-col justify-between overflow-hidden rounded-sm border border-[#38bdf8]/30 bg-[#070b19]/70 p-7 shadow-[0_0_25px_5px_rgba(3,5,12,.45)] sm:min-h-[500px] sm:p-11 motion-safe:animate-[works-rise_.9s_cubic-bezier(.16,1,.3,1)_both]">
+        <div className="relative flex min-h-[390px] flex-col justify-between overflow-hidden rounded-sm bg-[#070b19]/70 p-7 shadow-[0_0_25px_5px_rgba(3,5,12,.45)] sm:min-h-[500px] sm:p-11 motion-safe:animate-[works-rise_.9s_cubic-bezier(.16,1,.3,1)_both]">
           <span className="absolute -right-2 -top-20 font-serif text-[300px] leading-none text-[#38bdf8]/[.08]" aria-hidden="true">“</span>
           <div className="relative">
             <div className="mb-8 flex items-center gap-3 text-[#38bdf8]">
@@ -45,7 +44,7 @@ const Testimonials = () => (
               “Some stories entertain you. The best ones follow you into the dark.”
             </blockquote>
           </div>
-          <div className="relative mt-10 border-t border-[#38bdf8]/25 pt-5">
+          <div className="relative mt-10 pt-5">
             <p className="mb-1 font-sans text-xs font-semibold uppercase tracking-[.18em] text-white">A note from the reading room</p>
             <p className="m-0 font-['Roboto_Slab',Georgia,serif] text-sm leading-relaxed text-[#e2e8f0]/70">Sample testimonial copy — replace with a real reader quote when available.</p>
           </div>

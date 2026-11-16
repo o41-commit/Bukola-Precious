@@ -5,7 +5,7 @@ const About = () => (
   <section
     id="about"
     aria-labelledby="about-title"
-    className="relative isolate min-h-[calc(100svh-105px)] scroll-mt-20 overflow-hidden border-y-[10px] border-[#38bdf8]/40 bg-[#0b1329] text-[#e2e8f0] md:scroll-mt-[105px]"
+    className="relative isolate min-h-[calc(100svh-105px)] scroll-mt-20 overflow-hidden bg-[#0b1329] text-[#e2e8f0] md:scroll-mt-[105px]"
   >
     {/* Deep Midnight Blue & Luminous Cyan Ambient Backdrop */}
     <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_15%_30%,rgba(56,189,248,.18),transparent_48%),linear-gradient(125deg,#050814_0%,#0f1d3d_55%,#070e21_100%)]" />
@@ -19,13 +19,6 @@ const About = () => (
       {/* Left Column: Editorial Bio */}
       <div className="relative flex flex-col justify-between px-5 pb-44 pt-16 sm:px-12 sm:pb-52 sm:pt-20 lg:px-[10%] lg:pb-52 lg:pt-16">
         <div className="relative z-10 max-w-[610px]">
-          {/* Eyebrow Role Badge */}
-          <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-[#38bdf8]/35 bg-[#070b19]/65 px-4 py-1.5 backdrop-blur-md motion-safe:animate-[about-rise_.8s_cubic-bezier(.16,1,.3,1)_both]">
-            <span className="size-1.5 rotate-45 bg-[#38bdf8] shadow-[0_0_8px_#38bdf8]" aria-hidden="true" />
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[.24em] text-[#bae6fd] sm:text-[11px]">
-              Technical Content Writer for SaaS and AI
-            </span>
-          </div>
 
           {/* Heading + Quill Emblem */}
           <div className="mb-7 flex flex-wrap items-center gap-4 sm:gap-5 motion-safe:animate-[about-rise_.85s_cubic-bezier(.16,1,.3,1)_100ms_both]">
@@ -36,7 +29,7 @@ const About = () => (
               About Me<span className="text-white">.</span>
             </h2>
             <span
-              className="grid size-12 shrink-0 place-items-center rounded-full border border-[#38bdf8]/40 bg-[#070b19]/50 text-[#bae6fd] shadow-[0_0_25px_rgba(56,189,248,0.2)] backdrop-blur-sm motion-safe:animate-[about-float_5s_ease-in-out_infinite] sm:size-[58px]"
+              className="grid size-12 shrink-0 place-items-center rounded-full bg-[#070b19]/50 text-[#bae6fd] shadow-[0_0_25px_rgba(56,189,248,0.2)] backdrop-blur-sm motion-safe:animate-[about-float_5s_ease-in-out_infinite] sm:size-[58px]"
               aria-hidden="true"
             >
               <svg viewBox="0 0 48 48" className="size-7 sm:size-8" fill="none">
@@ -83,7 +76,7 @@ const About = () => (
           <div className="mt-8 motion-safe:animate-[about-rise_.85s_cubic-bezier(.16,1,.3,1)_640ms_both]">
             <a
               href="#works"
-              className="group inline-flex items-center gap-3 rounded-full border border-[#38bdf8]/45 bg-[#070b19]/60 px-6 py-3 text-[11px] font-semibold uppercase tracking-[.22em] text-[#bae6fd] no-underline shadow-[0_8px_25px_rgba(0,0,0,0.3)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#bae6fd] hover:bg-[#38bdf8] hover:text-[#050814]"
+              className="group inline-flex items-center gap-3 rounded-full bg-[#070b19]/60 px-6 py-3 text-[11px] font-semibold uppercase tracking-[.22em] text-[#bae6fd] no-underline shadow-[0_8px_25px_rgba(0,0,0,0.3)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#38bdf8] hover:text-[#050814]"
             >
               <span>A little more about my work</span>
               <span
@@ -97,7 +90,7 @@ const About = () => (
         </div>
 
         {/* Bottom Atmospheric Notebook Banner */}
-        <div className="absolute bottom-0 left-0 h-[145px] w-full overflow-hidden border-t border-[#38bdf8]/25 sm:h-[175px]">
+        <div className="absolute bottom-0 left-0 h-[145px] w-full overflow-hidden sm:h-[175px]">
           <img
             src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1400&q=85"
             alt="A writer's hands at work in a notebook"
@@ -112,7 +105,7 @@ const About = () => (
       </div>
 
       {/* Right Column: Editorial Portrait */}
-      <div className="group relative min-h-[520px] overflow-hidden border-t border-[#38bdf8]/25 lg:min-h-full lg:border-l lg:border-t-0 motion-safe:animate-[about-image-in_1.1s_cubic-bezier(.16,1,.3,1)_both]">
+      <div className="group relative min-h-[520px] overflow-hidden lg:min-h-full motion-safe:animate-[about-image-in_1.1s_cubic-bezier(.16,1,.3,1)_both]">
         <img
           src={ProfileImage}
           alt="Editorial portrait of Bukola Precious"
@@ -122,13 +115,8 @@ const About = () => (
         <div className="absolute inset-0 bg-gradient-to-t from-[#050814]/90 via-[#0b1329]/20 to-[#070b19]/30" />
 
         {/* Subtle Inner Ice-Blue Frame */}
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-4 rounded-2xl border border-[#bae6fd]/20 transition-colors duration-500 group-hover:border-[#38bdf8]/50 sm:inset-6"
-        />
-
         {/* Editorial Signature Plate */}
-        <div className="absolute bottom-8 left-6 right-6 border-l-2 border-[#38bdf8]/80 pl-4 text-[#bae6fd] sm:bottom-12 sm:left-10 sm:right-10 sm:pl-5">
+        <div className="absolute bottom-8 left-6 right-6 text-[#bae6fd] sm:bottom-12 sm:left-10 sm:right-10">
           <p className="mb-1.5 font-sans text-[10px] font-semibold uppercase tracking-[.28em] text-white/85">
             Technical Writer · SaaS &amp; AI · Storyteller
           </p>

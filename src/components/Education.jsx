@@ -4,18 +4,14 @@ const Education = () => (
   <section
     id="education"
     aria-labelledby="education-title"
-    className="relative isolate overflow-hidden border-y-[10px] border-[#38bdf8] bg-[#07111f] px-5 py-20 text-[#e2e8f0] sm:px-8 sm:py-28"
+    className="relative isolate overflow-hidden  bg-[#07111f] px-5 py-20 text-[#e2e8f0] sm:px-8 sm:py-28"
   >
     <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_82%_45%,rgba(56,189,248,.16),transparent_38%),linear-gradient(120deg,#070b19_0%,#0f1d3d_52%,#07111f_100%)]" />
-    <div className="pointer-events-none absolute -right-20 top-1/2 -z-10 size-[360px] -translate-y-1/2 rounded-full border border-[#38bdf8]/10" />
 
     <div className="mx-auto grid max-w-[1120px] gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-center lg:gap-16">
       <header className="motion-safe:animate-[works-rise_.8s_cubic-bezier(.16,1,.3,1)_both]">
-        <div className="mb-5 flex items-center gap-4 text-[#38bdf8]">
-          <span className="h-px w-12 bg-current" />
-          <span className="font-sans text-[10px] font-semibold uppercase tracking-[.36em]">
-            The foundations
-          </span>
+        <div className="mb-5 font-sans text-[10px] font-semibold uppercase tracking-[.36em] text-[#38bdf8]">
+          The foundations
         </div>
         <h2
           id="education-title"
@@ -29,13 +25,12 @@ const Education = () => (
         </p>
       </header>
 
-      <article className="group relative overflow-hidden rounded-[28px] border border-[#38bdf8]/35 bg-[#070b19]/75 p-6 shadow-[0_20px_60px_rgba(0,0,0,.28)] backdrop-blur-sm transition duration-500 hover:border-[#38bdf8]/65 hover:shadow-[0_24px_70px_rgba(0,0,0,.38)] sm:p-10 motion-safe:animate-[works-rise_.95s_cubic-bezier(.16,1,.3,1)_both]">
+      <article className="group relative overflow-hidden rounded-[28px] bg-[#070b19]/75 p-6 shadow-[0_20px_60px_rgba(0,0,0,.28)] backdrop-blur-sm transition duration-500 hover:shadow-[0_24px_70px_rgba(0,0,0,.38)] sm:p-10 motion-safe:animate-[works-rise_.95s_cubic-bezier(.16,1,.3,1)_both]">
         <div className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-[#bae6fd] via-[#38bdf8] to-transparent" />
-        <div className="absolute -right-8 -top-10 size-40 rounded-full border border-[#38bdf8]/10 transition-transform duration-700 group-hover:scale-125" />
 
         <div className="relative flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
           <div className="flex items-start gap-5">
-            <div className="grid size-14 shrink-0 place-items-center rounded-2xl border border-[#38bdf8]/35 bg-[#0f1d3d]/45 text-[#bae6fd] sm:size-16">
+            <div className="grid size-14 shrink-0 place-items-center rounded-2xl bg-[#0f1d3d]/45 text-[#bae6fd] sm:size-16">
               <svg
                 viewBox="0 0 32 32"
                 className="size-7 sm:size-8"
@@ -70,12 +65,12 @@ const Education = () => (
             </div>
           </div>
 
-          <span className="inline-flex w-fit items-center rounded-full border border-[#38bdf8]/40 bg-[#38bdf8]/10 px-4 py-2 font-sans text-xs font-semibold tracking-[.12em] text-[#bae6fd] sm:mt-1 sm:whitespace-nowrap sm:text-sm">
+          <span className="inline-flex w-fit items-center rounded-full bg-[#38bdf8]/10 px-4 py-2 font-sans text-xs font-semibold tracking-[.12em] text-[#bae6fd] sm:mt-1 sm:whitespace-nowrap sm:text-sm">
             2022 — 2026
           </span>
         </div>
 
-        <div className="relative mt-8 border-t border-[#38bdf8]/20 pt-5 sm:mt-10">
+        <div className="relative mt-8 pt-5 sm:mt-10">
           <div className="flex items-center gap-2 text-[#38bdf8]">
             <span className="size-1.5 rounded-full bg-current" />
             <span className="font-sans text-[10px] font-semibold uppercase tracking-[.24em]">

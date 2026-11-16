@@ -11,7 +11,7 @@ const navigation = [
 ];
 
 const Footer = () => (
-  <footer className="border-t border-[#38bdf8]/35 bg-[#070b19] px-5 py-10 text-[#e2e8f0] sm:px-8 sm:py-12">
+  <footer className="bg-[#070b19] px-5 py-10 text-[#e2e8f0] sm:px-8 sm:py-12">
     <div className="mx-auto max-w-[1280px]">
       <div className="grid gap-9 md:grid-cols-[1fr_auto] md:items-start">
         <div className="max-w-sm">
@@ -26,12 +26,12 @@ const Footer = () => (
         </nav>
       </div>
 
-      <div className="mt-8 flex flex-col gap-4 border-t border-white/10 pt-5 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mt-8 flex flex-col gap-4 pt-5 sm:flex-row sm:items-center sm:justify-between">
         <p className="m-0 font-sans text-[10px] tracking-wide text-[#e2e8f0]/55">© {new Date().getFullYear()} Bukola Precious. All rights reserved.</p>
         <div className="flex items-center gap-4">
           <span className="font-sans text-[9px] font-semibold uppercase tracking-[.2em] text-[#38bdf8]">Connect</span>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="grid size-8 place-items-center rounded-full border border-[#38bdf8]/30 text-xs font-bold text-[#bae6fd] no-underline transition-colors hover:border-[#bae6fd] hover:bg-[#38bdf8]/15">in</a>
-          <a href="https://x.com/" target="_blank" rel="noreferrer" aria-label="X" className="grid size-8 place-items-center rounded-full border border-[#38bdf8]/30 text-xs font-bold text-[#bae6fd] no-underline transition-colors hover:border-[#bae6fd] hover:bg-[#38bdf8]/15">𝕏</a>
+          <a href="https://www.linkedin.com/in/bukola-precious-a93740331" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="grid size-8 place-items-center rounded-full text-xs font-bold text-[#bae6fd] no-underline transition-colors hover:bg-[#38bdf8]/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#bae6fd]">in</a>
+          <a href="https://x.com/precious_b73231" target="_blank" rel="noreferrer" aria-label="X" className="grid size-8 place-items-center rounded-full text-xs font-bold text-[#bae6fd] no-underline transition-colors hover:bg-[#38bdf8]/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#bae6fd]">𝕏</a>
         </div>
       </div>
     </div>

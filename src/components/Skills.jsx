@@ -70,20 +70,10 @@ const Skills = () => {
     <section
       id="skills"
       aria-labelledby="skills-title"
-      className="relative isolate overflow-hidden border-y-[10px] border-[#38bdf8] bg-[#0f1d3d] px-5 py-20 text-[#e2e8f0] sm:px-8 sm:py-28"
+      className="relative isolate overflow-hidden bg-[#0f1d3d] px-5 py-20 text-[#e2e8f0] sm:px-8 sm:py-28"
     >
       {/* Multi-layered Atmospheric Background */}
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_15%_10%,rgba(56,189,248,.24),transparent_42%),radial-gradient(ellipse_at_88%_85%,rgba(15,29,61,.55),transparent_48%),linear-gradient(135deg,#03050c_0%,#0f1d3d_48%,#050814_100%)]" />
-
-      {/* Counter-Rotating Astrolabe Rings */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -right-28 top-6 -z-10 size-96 rounded-full border border-dashed border-[#38bdf8]/15 motion-safe:animate-[spin_60s_linear_infinite]"
-      />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -right-16 top-16 -z-10 size-72 rounded-full border border-[#bae6fd]/10 motion-safe:animate-[spin_45s_linear_infinite_reverse]"
-      />
 
       {/* Floating Blue Motes */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
@@ -127,7 +117,7 @@ const Skills = () => {
           {/* Card 01: Expertise */}
           <section
             aria-labelledby="expertise-title"
-            className="group/card relative overflow-hidden rounded-[30px] border border-[#38bdf8]/30 bg-gradient-to-b from-[#291207]/85 to-[#1c0b04]/90 p-5 shadow-[0_24px_60px_rgba(0,0,0,.35)] backdrop-blur-md transition-colors duration-500 hover:border-[#38bdf8]/50 motion-safe:animate-[works-rise_.9s_cubic-bezier(.16,1,.3,1)_100ms_both] sm:p-8"
+            className="group/card relative overflow-hidden rounded-[30px] bg-gradient-to-b from-[#0b1831]/90 to-[#070b19]/90 p-5 shadow-[0_24px_60px_rgba(0,0,0,.35)] backdrop-blur-md transition-colors duration-500 motion-safe:animate-[works-rise_.9s_cubic-bezier(.16,1,.3,1)_100ms_both] sm:p-8"
           >
             {/* Top Subtle Corner Glow */}
             <div
@@ -135,7 +125,7 @@ const Skills = () => {
               className="pointer-events-none absolute -left-20 -top-20 size-56 rounded-full bg-[#38bdf8]/10 blur-3xl transition-opacity duration-500 group-hover/card:opacity-100"
             />
 
-            <div className="mb-6 flex items-end justify-between gap-4 border-b border-[#38bdf8]/25 pb-5">
+            <div className="mb-6 flex items-end justify-between gap-4 pb-5">
               <div>
                 <p className="mb-2 font-sans text-[10px] font-semibold uppercase tracking-[.28em] text-[#38bdf8]">
                   01 / What I do
@@ -169,17 +159,17 @@ const Skills = () => {
                         setActiveSkill(isSelected ? null : skill.short)
                       }
                       aria-pressed={isSelected}
-                      className={`group flex min-h-[76px] w-full cursor-pointer items-center gap-4 rounded-2xl border px-3.5 py-2.5 text-left transition-all duration-300 sm:px-4 ${
+                      className={`group flex min-h-[76px] w-full cursor-pointer items-center gap-4 rounded-2xl px-3.5 py-2.5 text-left transition-all duration-300 sm:px-4 ${
                         isSelected
-                          ? "border-[#bae6fd]/70 bg-gradient-to-r from-[#0f1d3d]/75 to-[#0f1d3d]/60 shadow-[0_8px_25px_rgba(56,189,248,0.2)]"
-                          : "border-transparent bg-white/[0.015] hover:-translate-y-0.5 hover:border-[#38bdf8]/35 hover:bg-[#0f1d3d]/40"
+                          ? "bg-gradient-to-r from-[#0f1d3d]/75 to-[#0f1d3d]/60 shadow-[0_8px_25px_rgba(56,189,248,0.2)]"
+                          : "bg-white/[0.015] hover:-translate-y-0.5 hover:bg-[#0f1d3d]/40"
                       }`}
                     >
                       <span
-                        className={`grid size-11 shrink-0 place-items-center rounded-full border font-sans text-[11px] font-bold tracking-wider transition-all duration-300 ${
+                        className={`grid size-11 shrink-0 place-items-center rounded-full font-sans text-[11px] font-bold tracking-wider transition-all duration-300 ${
                           isSelected
-                            ? "scale-105 border-[#bae6fd] bg-[#bae6fd] text-[#070b19] shadow-[0_0_15px_rgba(186,230,253,0.5)]"
-                            : "border-[#38bdf8]/45 bg-[#38bdf8]/10 text-[#bae6fd] group-hover:rotate-6 group-hover:border-[#bae6fd] group-hover:bg-[#38bdf8] group-hover:text-[#070b19]"
+                            ? "scale-105 bg-[#bae6fd] text-[#070b19] shadow-[0_0_15px_rgba(186,230,253,0.5)]"
+                            : "bg-[#38bdf8]/10 text-[#bae6fd] group-hover:rotate-6 group-hover:bg-[#38bdf8] group-hover:text-[#070b19]"
                         }`}
                       >
                         {skill.short}
@@ -226,7 +216,7 @@ const Skills = () => {
             >
               <div className="min-h-0 overflow-hidden">
                 {selectedData && (
-                  <div className="flex flex-col justify-between gap-3 rounded-2xl border border-[#bae6fd]/30 bg-[#0f1d3d]/35 px-4 py-3.5 sm:flex-row sm:items-center">
+                  <div className="flex flex-col justify-between gap-3 rounded-2xl bg-[#0f1d3d]/55 px-4 py-3.5 sm:flex-row sm:items-center">
                     <p className="m-0 font-['Roboto_Slab',Georgia,serif] text-xs leading-relaxed text-[#f0f9ff] sm:text-sm">
                       <strong className="text-[#bae6fd]">
                         {selectedData.name}:
@@ -236,7 +226,7 @@ const Skills = () => {
                     <button
                       type="button"
                       onClick={() => setActiveSkill(null)}
-                      className="shrink-0 self-start rounded-full border border-[#bae6fd]/30 px-3 py-1 font-sans text-[10px] font-semibold uppercase tracking-widest text-[#bae6fd] transition hover:bg-[#bae6fd]/15 sm:self-center"
+                      className="shrink-0 self-start rounded-full bg-white/[0.06] px-3 py-1 font-sans text-[10px] font-semibold uppercase tracking-widest text-[#bae6fd] transition hover:bg-[#bae6fd]/15 sm:self-center"
                     >
                       Reset
                     </button>
@@ -249,20 +239,11 @@ const Skills = () => {
           {/* Card 02: Tools */}
           <section
             aria-labelledby="tools-title"
-            className="group/tools relative flex flex-col justify-between overflow-hidden rounded-[30px] border border-[#38bdf8]/40 bg-gradient-to-br from-[#2563eb] via-[#1d4ed8] to-[#1e3a8a] p-5 shadow-[0_24px_60px_rgba(0,0,0,.35)] transition-all duration-500 hover:border-[#bae6fd]/50 motion-safe:animate-[works-rise_1s_cubic-bezier(.16,1,.3,1)_220ms_both] sm:p-8"
+            className="group/tools relative flex flex-col justify-between overflow-hidden rounded-[30px] bg-gradient-to-br from-[#2563eb] via-[#1d4ed8] to-[#1e3a8a] p-5 shadow-[0_24px_60px_rgba(0,0,0,.35)] transition-all duration-500 motion-safe:animate-[works-rise_1s_cubic-bezier(.16,1,.3,1)_220ms_both] sm:p-8"
           >
             {/* Decorative Concentric Arcs */}
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute -right-12 -top-14 size-48 rounded-full border border-[#bae6fd]/20 transition-transform duration-700 group-hover/tools:scale-110"
-            />
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute -right-6 -top-8 size-36 rounded-full border border-[#bae6fd]/10"
-            />
-
             <div className="relative">
-              <div className="mb-6 border-b border-[#bae6fd]/25 pb-5">
+              <div className="mb-6 pb-5">
                 <p className="mb-2 font-sans text-[10px] font-semibold uppercase tracking-[.28em] text-[#bae6fd]/80">
                   02 / The toolkit
                 </p>
@@ -291,12 +272,12 @@ const Skills = () => {
                       className="motion-safe:animate-[works-rise_.7s_cubic-bezier(.16,1,.3,1)_both]"
                     >
                       <span
-                        className={`inline-flex min-h-11 items-center gap-2.5 rounded-full border px-4 py-2 font-sans text-sm transition-all duration-300 ${
+                        className={`inline-flex min-h-11 items-center gap-2.5 rounded-full px-4 py-2 font-sans text-sm transition-all duration-300 ${
                           isHighlighted
-                            ? "-translate-y-1 border-[#bae6fd] bg-[#070b19]/85 font-semibold text-[#bae6fd] shadow-[0_8px_20px_rgba(186,230,253,0.3)]"
+                            ? "-translate-y-1 bg-[#070b19]/85 font-semibold text-[#bae6fd] shadow-[0_8px_20px_rgba(186,230,253,0.3)]"
                             : isDimmed
-                            ? "border-[#bae6fd]/15 bg-[#070b19]/20 text-white/40"
-                            : "border-[#bae6fd]/35 bg-[#070b19]/35 text-[#f0f9ff] hover:-translate-y-1 hover:border-[#bae6fd]/85 hover:bg-[#070b19]/65 hover:shadow-[0_8px_20px_rgba(0,0,0,0.3)]"
+                            ? "bg-[#070b19]/20 text-white/40"
+                            : "bg-[#070b19]/35 text-[#f0f9ff] hover:-translate-y-1 hover:bg-[#070b19]/65 hover:shadow-[0_8px_20px_rgba(0,0,0,0.3)]"
                         }`}
                       >
                         <span
@@ -316,7 +297,7 @@ const Skills = () => {
             </div>
 
             {/* Quill & Motto Footer */}
-            <div className="relative mt-10 flex items-center gap-3.5 border-t border-[#bae6fd]/20 pt-5 text-[#bae6fd]/90">
+            <div className="relative mt-10 flex items-center gap-3.5 pt-5 text-[#bae6fd]/90">
               <svg
                 viewBox="0 0 32 32"
                 className="size-8 shrink-0 transition-transform duration-500 group-hover/tools:-rotate-6 group-hover/tools:scale-110"

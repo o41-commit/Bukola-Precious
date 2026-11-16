@@ -40,7 +40,7 @@ const Hero = () => {
   return (
     <main
       id="home"
-      className="relative grid min-h-[100svh] place-items-center overflow-hidden px-5 pb-20 pt-[110px] text-center sm:px-6 md:pb-24 md:pt-[135px]"
+      className="relative grid min-h-[100svh] place-items-center overflow-hidden border-b-[3px] border-[#38bdf8] px-5 pb-20 pt-[110px] text-center shadow-[0_3px_18px_rgba(56,189,248,0.4)] sm:px-6 md:pb-24 md:pt-[135px]"
     >
       {/* Background Image with Cinematic Midnight Blue Gradient Overlay */}
       <div aria-hidden="true" className="absolute inset-0 -z-20 overflow-hidden">
@@ -93,7 +93,7 @@ const Hero = () => {
           className="mx-auto mt-6 flex w-48 items-center justify-center gap-3 opacity-80 motion-safe:animate-[hero-reveal_0.85s_cubic-bezier(0.22,1,0.36,1)_460ms_both]"
         >
           <span className="h-[1px] flex-1 bg-gradient-to-r from-transparent to-[#38bdf8]" />
-          <span className="h-1.5 w-1.5 rotate-45 border border-[#bae6fd] bg-[#38bdf8]/50" />
+          <span className="h-1.5 w-1.5 rotate-45 bg-[#38bdf8]/70" />
           <span className="h-[1px] flex-1 bg-gradient-to-l from-transparent to-[#38bdf8]" />
         </div>
 
@@ -109,7 +109,7 @@ const Hero = () => {
         <div className="relative mx-auto mt-10 flex w-fit max-w-full flex-wrap items-center justify-center gap-y-4 motion-safe:animate-[hero-reveal_0.9s_cubic-bezier(0.22,1,0.36,1)_680ms_both] max-md:mt-8">
           <a
             href="#works"
-            className="group relative inline-flex min-h-[58px] items-center justify-center gap-3 overflow-hidden rounded-full border border-[#38bdf8]/50 bg-gradient-to-b from-[#1d4ed8] to-[#1e3a8a] px-10 text-sm font-bold uppercase tracking-[0.14em] text-[#f0f9ff] no-underline shadow-[0_10px_35px_-5px_rgba(29,78,216,0.6)] transition-all duration-300 hover:-translate-y-1 hover:border-[#bae6fd] hover:shadow-[0_16px_40px_-5px_rgba(56,189,248,0.35)] active:translate-y-0 sm:min-h-[62px] sm:px-12 sm:text-base"
+            className="group relative inline-flex min-h-[58px] items-center justify-center gap-3 overflow-hidden rounded-full bg-gradient-to-b from-[#1d4ed8] to-[#1e3a8a] px-10 text-sm font-bold uppercase tracking-[0.14em] text-[#f0f9ff] no-underline shadow-[0_10px_35px_-5px_rgba(29,78,216,0.6)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_-5px_rgba(56,189,248,0.35)] active:translate-y-0 sm:min-h-[62px] sm:px-12 sm:text-base"
           >
             <span
               aria-hidden="true"
