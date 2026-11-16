@@ -1,4 +1,5 @@
 import React from "react";
+import ResumePdf from "../assets/Resume.pdf";
 
 const Education = () => (
   <section
@@ -80,6 +81,42 @@ const Education = () => (
               Communication, storytelling &amp; media
             </span>
           </div>
+        </div>
+
+        <div className="relative mt-8 flex flex-wrap gap-3">
+          <a
+            href={ResumePdf}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View CV in a new tab"
+            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-[#0f1d3d] px-5 font-sans text-xs font-semibold tracking-[.08em] text-[#e0f2fe] no-underline shadow-[0_8px_24px_rgba(3,5,12,.28)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#132a52] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#bae6fd]"
+          >
+            View CV
+            <span aria-hidden="true" className="text-sm text-[#38bdf8]">
+              ↗
+            </span>
+          </a>
+          <a
+            href={ResumePdf}
+            download="Bukola-Precious-CV.pdf"
+            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#38bdf8] to-[#2563eb] px-5 font-sans text-xs font-semibold tracking-[.08em] text-[#07111f] no-underline shadow-[0_8px_24px_rgba(29,78,216,.3)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(56,189,248,.3)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+          >
+            Download CV
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 16 16"
+              fill="none"
+              className="size-4"
+            >
+              <path
+                d="M8 2.5v7m0 0 2.5-2.5M8 9.5 5.5 7M3.5 11v2h9v-2"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </a>
         </div>
       </article>
     </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ProfileImage from "../assets/Profile.jpeg";
+import ResumePdf from "../assets/Resume.pdf";
 
 const TYPING_PHRASES = [
   "Technical Writing",
@@ -106,24 +107,39 @@ const Hero = () => {
           and twisted mystery, I craft stories that unravel the unseen.
         </p>
 
-        {/* CTA Button + Arrow + Note */}
-        <div className="relative mx-auto mt-10 flex w-fit max-w-full flex-wrap items-center justify-center gap-y-4 motion-safe:animate-[hero-reveal_0.9s_cubic-bezier(0.22,1,0.36,1)_680ms_both] max-md:mt-8">
-          <a
-            href="#works"
-            className="group relative inline-flex min-h-[58px] items-center justify-center gap-3 overflow-hidden rounded-full bg-gradient-to-b from-[#1d4ed8] to-[#1e3a8a] px-10 text-sm font-bold uppercase tracking-[0.14em] text-[#f0f9ff] no-underline shadow-[0_10px_35px_-5px_rgba(29,78,216,0.6)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_-5px_rgba(56,189,248,0.35)] active:translate-y-0 sm:min-h-[62px] sm:px-12 sm:text-base"
-          >
-            <span
-              aria-hidden="true"
-              className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-[#bae6fd]/25 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full"
-            />
-            <span className="relative">Explore My Works</span>
-            <span
-              aria-hidden="true"
-              className="relative text-[#bae6fd] transition-transform duration-300 group-hover:translate-x-1"
+        {/* Primary actions and supporting note */}
+        <div className="relative mx-auto mt-10 flex w-full max-w-[460px] flex-col items-center gap-4 motion-safe:animate-[hero-reveal_0.9s_cubic-bezier(0.22,1,0.36,1)_680ms_both] max-md:mt-8">
+          <div className="flex w-full flex-wrap items-center justify-center gap-2 sm:gap-3">
+            <a
+              href="#works"
+              className="group relative inline-flex min-h-11 min-w-0 flex-1 basis-[154px] items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-b from-[#1d4ed8] to-[#1e3a8a] px-3 text-[11px] font-bold uppercase tracking-[0.04em] text-[#f0f9ff] no-underline shadow-[0_10px_35px_-5px_rgba(29,78,216,0.6)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_-5px_rgba(56,189,248,0.35)] active:translate-y-0 sm:min-h-[62px] sm:flex-none sm:basis-auto sm:gap-3 sm:px-12 sm:text-base sm:tracking-[0.14em]"
             >
-              →
-            </span>
-          </a>
+              <span
+                aria-hidden="true"
+                className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-[#bae6fd]/25 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full"
+              />
+              <span className="relative whitespace-nowrap">Explore My Works</span>
+              <span
+                aria-hidden="true"
+                className="relative text-[#bae6fd] transition-transform duration-300 group-hover:translate-x-1"
+              >
+                →
+              </span>
+            </a>
+
+            <a
+              href={ResumePdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View CV in a new tab"
+              className="inline-flex min-h-11 min-w-0 flex-1 basis-[92px] items-center justify-center gap-1.5 rounded-full bg-[#0f1d3d]/90 px-3 font-sans text-[11px] font-semibold tracking-[0.04em] text-[#e0f2fe] no-underline shadow-[0_8px_24px_rgba(3,5,12,.28)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#132a52] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#bae6fd] sm:min-h-[62px] sm:flex-none sm:basis-auto sm:gap-2 sm:px-5 sm:text-xs sm:tracking-[.08em]"
+            >
+              View CV
+              <span aria-hidden="true" className="text-sm text-[#38bdf8]">
+                ↗
+              </span>
+            </a>
+          </div>
 
           <div className="flex items-center">
             <svg
