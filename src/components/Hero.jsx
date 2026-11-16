@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import ProfileImage from "../assets/Profile.jpeg";
 
 const TYPING_PHRASES = [
-  "Dark Tales",
-  "Gothic Fiction",
-  "Twisted Mysteries",
-  "Haunting Worlds",
+  "Technical Writing",
+  "AI & Machine Learning",
+  "SaaS Content Strategy",
+  "Product Documentation",
+  "Developer Education",
 ];
 
 const Hero = () => {
@@ -78,7 +79,7 @@ const Hero = () => {
             The Architect of
           </span>
 
-          <span className="mt-1 inline-flex min-h-[1.3em] items-center justify-center whitespace-nowrap font-bold italic text-[#bae6fd] drop-shadow-[0_0_25px_rgba(56,189,248,0.35)] motion-safe:animate-[hero-reveal_0.85s_cubic-bezier(0.22,1,0.36,1)_360ms_both] max-md:whitespace-normal">
+          <span className="mt-1 inline-flex min-h-[1.3em] items-center justify-center whitespace-nowrap font-bold italic text-[#bae6fd] drop-shadow-[0_0_25px_rgba(56,189,248,0.35)] motion-safe:animate-[hero-reveal_0.85s_cubic-bezier(0.22,1,0.36,1)_360ms_both] max-md:whitespace-normal max-md:text-[clamp(1.25rem,6.4vw,2.4rem)]">
             <span>{displayedText}</span>
             <span
               aria-hidden="true"
