@@ -59,6 +59,7 @@ const workGroups = [
       },
     ],
   },
+
   {
     id: "product-led",
     number: "03",
@@ -77,6 +78,19 @@ const workGroups = [
         title:
           "The Step in Your SaaS Sales Cycle Where Deals Die That Your CRM Is Not Capturing",
         href: "https://www.linkedin.com/pulse/copy-step-your-saas-sales-cycle-where-deals-die-crm-bukola-precious-rgyff",
+      },
+    ],
+  },  {
+    id: "How-to guide",
+    number: "04",
+    title: "How-to guide",
+    description: "Step-by-step instructions to help teams accomplish specific tasks.",
+    works: [
+      {
+        platform: "Hashnode · Techiemuse",
+        title:
+          "How to Set Up Your First Notion Workspace as a Freelancer.",
+        href: "https://hashnode.com/edit/cmwqwt9zv000008kz26lmhfek",
       },
     ],
   },
@@ -140,11 +154,11 @@ const Works = () => (
           id="works-title"
           className="m-0 text-[clamp(44px,7vw,80px)] font-bold leading-[1.08] tracking-[-.05em] text-[#bae6fd]"
         >
-          Words for <span className="text-white">technology.</span>
+          Clarity in <span className="text-white">practice.</span>
         </h2>
         <p className="mb-0 mt-5 max-w-2xl font-['Roboto_Slab',Georgia,serif] text-base leading-relaxed text-[#e2e8f0]/75 sm:text-lg">
           Writing that makes AI, SaaS, and product decisions easier to
-          understand — and easier to act on.
+          understand and easier to act on.
         </p>
       </header>
 

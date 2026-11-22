@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const contactEmail = "fatobabukolaprecious@gmail.com";
 const emailSubject = encodeURIComponent(
@@ -57,6 +57,7 @@ const PROJECT_TYPES = [
 const Contact = () => {
   const [selectedTopic, setSelectedTopic] = useState("Product Documentation");
   const [copied, setCopied] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState("idle");
 
   const handleCopyEmail = () => {
     if (!contactEmail) return;
@@ -65,18 +66,38 @@ const Contact = () => {
     setTimeout(() => setCopied(false), 2200);
   };
 
-  const sendMessage = (event) => {
+  const sendMessage = async (event) => {
     event.preventDefault();
-    if (!contactEmail) return;
 
-    const formData = new FormData(event.currentTarget);
-    const subject = encodeURIComponent(
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    formData.set("project_focus", selectedTopic);
+    formData.set(
+      "_subject",
       `[${selectedTopic}] Technical writing inquiry from ${formData.get("name")}`
     );
-    const body = encodeURIComponent(
-      `Name: ${formData.get("name")}\nEmail: ${formData.get("email")}\nProject Focus: ${selectedTopic}\n\n${formData.get("message")}`
-    );
-    window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
+
+    setSubmitStatus("sending");
+
+    try {
+      const response = await fetch("https://formspree.io/f/mdegwenn", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      form.reset();
+      setSelectedTopic("Product Documentation");
+      setSubmitStatus("success");
+    } catch {
+      setSubmitStatus("error");
+    }
   };
 
   return (
@@ -338,8 +359,17 @@ const Contact = () => {
             {/* Project Inquiry Form */}
             <form
               onSubmit={sendMessage}
+              action="https://formspree.io/f/mdegwenn"
+              method="POST"
               className="mt-6 pt-6"
             >
+              <input type="hidden" name="project_focus" value={selectedTopic} />
+              <input
+                type="hidden"
+                name="_subject"
+                value={`[${selectedTopic}] Technical writing inquiry`}
+              />
+
               <div className="mb-3 flex items-center justify-between">
                 <p className="m-0 inline-flex items-center gap-2 font-sans text-[10px] font-bold uppercase tracking-[.24em] text-[#bae6fd]">
                   <svg viewBox="0 0 24 24" className="size-3.5 text-[#38bdf8]" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -431,14 +461,16 @@ const Contact = () => {
 
               <button
                 type="submit"
-                disabled={!contactEmail}
+                disabled={submitStatus === "sending"}
                 className="group relative mt-4 inline-flex min-h-12 w-full items-center justify-center gap-2.5 overflow-hidden rounded-xl bg-gradient-to-r from-[#1d4ed8] via-[#2563eb] to-[#1e3a8a] px-6 font-sans text-xs font-bold uppercase tracking-[.18em] text-[#f0f9ff] shadow-[0_10px_25px_rgba(29,78,216,0.4)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_14px_32px_rgba(56,189,248,0.35)] disabled:cursor-not-allowed disabled:opacity-55 sm:w-auto"
               >
                 <span
                   aria-hidden="true"
                   className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-[#bae6fd]/25 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full"
                 />
-                <span className="relative">Send inquiry</span>
+                <span className="relative">
+                  {submitStatus === "sending" ? "Sending..." : "Send inquiry"}
+                </span>
                 <svg
                   viewBox="0 0 24 24"
                   className="relative size-4 text-[#bae6fd] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5"
@@ -453,6 +485,24 @@ const Contact = () => {
                   <polygon points="22 2 15 22 11 13 2 9 22 2" />
                 </svg>
               </button>
+
+              <p
+                role="status"
+                aria-live="polite"
+                className={`mt-3 min-h-5 font-sans text-xs ${
+                  submitStatus === "success"
+                    ? "text-[#86efac]"
+                    : submitStatus === "error"
+                      ? "text-[#fca5a5]"
+                      : "text-transparent"
+                }`}
+              >
+                {submitStatus === "success"
+                  ? "Thanks! Your inquiry has been sent."
+                  : submitStatus === "error"
+                    ? "Sorry, something went wrong. Please try again."
+                    : "Submission status"}
+              </p>
             </form>
 
             {/* Footer Signature Bar */}

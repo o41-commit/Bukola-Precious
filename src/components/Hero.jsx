@@ -30,8 +30,8 @@ const Hero = () => {
         setDisplayedText(
           currentPhrase.substring(
             0,
-            displayedText.length + (isDeleting ? -1 : 1)
-          )
+            displayedText.length + (isDeleting ? -1 : 1),
+          ),
         );
       }
     }, typingSpeed);
@@ -45,7 +45,10 @@ const Hero = () => {
       className="relative grid min-h-[100svh] place-items-center overflow-hidden border-b-[3px] border-[#38bdf8] px-5 pb-20 pt-[110px] text-center shadow-[0_3px_18px_rgba(56,189,248,0.4)] sm:px-6 md:pb-24 md:pt-[135px]"
     >
       {/* Background Image with Cinematic Midnight Blue Gradient Overlay */}
-      <div aria-hidden="true" className="absolute inset-0 -z-20 overflow-hidden">
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-20 overflow-hidden"
+      >
         <img
           src={ProfileImage}
           alt="Profile of Bukola Precious"
@@ -62,7 +65,7 @@ const Hero = () => {
         className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
       >
         <div className="absolute left-1/2 top-1/2 h-[480px] w-[480px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#1d4ed8]/25 blur-[130px] motion-safe:animate-[ambient-pulse_8s_ease-in-out_infinite] sm:h-[680px] sm:w-[680px]" />
-        
+
         {/* Floating Luminous Blue/Silver Motes */}
         <span className="absolute left-[18%] top-[28%] h-1 w-1 rounded-full bg-[#bae6fd]/70 motion-safe:animate-[float-mote_7s_ease-in-out_infinite]" />
         <span className="absolute right-[22%] top-[34%] h-1.5 w-1.5 rounded-full bg-[#38bdf8]/60 motion-safe:animate-[float-mote_9s_ease-in-out_1.5s_infinite]" />
@@ -101,10 +104,9 @@ const Hero = () => {
 
         {/* Poetic Subheadline */}
         <p className="mx-auto mt-6 max-w-[820px] text-balance text-base leading-[1.95] text-[#e2e8f0]/90 motion-safe:animate-[hero-reveal_0.9s_cubic-bezier(0.22,1,0.36,1)_540ms_both] max-md:mt-5 max-md:text-sm max-md:leading-[1.8]">
-          Venture into the depths of the human soul, where shadows whisper and
-          secrets dwell.
-          <br className="max-md:hidden" /> Through gothic fiction, dark fantasy,
-          and twisted mystery, I craft stories that unravel the unseen.
+          Helping SaaS and AI companies turn complex products into documentation,
+          <br className="max-md:hidden" /> guides, and articles that readers
+          understand and use.
         </p>
 
         {/* Primary actions and supporting note */}
@@ -118,7 +120,9 @@ const Hero = () => {
                 aria-hidden="true"
                 className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-[#bae6fd]/25 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full"
               />
-              <span className="relative whitespace-nowrap">Explore My Works</span>
+              <span className="relative whitespace-nowrap">
+                Explore My Works
+              </span>
               <span
                 aria-hidden="true"
                 className="relative text-[#bae6fd] transition-transform duration-300 group-hover:translate-x-1"
@@ -158,7 +162,7 @@ const Hero = () => {
               />
             </svg>
             <span className="ml-1.5 w-28 rotate-[4deg] text-center font-['Merienda_One',cursive] text-[11px] leading-[1.45] text-[#e2e8f0]/90 sm:ml-2 sm:w-32 sm:text-xs">
-              Dare to discover what lies beyond the veil.
+              Clear writing for complex products
             </span>
           </div>
         </div>
