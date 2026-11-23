@@ -1,5 +1,3 @@
-import React from 'react';
-
 const navigation = [
   ['Home', '#home'],
   ['About', '#about'],
@@ -34,6 +32,15 @@ const Footer = () => (
           <a href="https://x.com/precious_b73231" target="_blank" rel="noreferrer" aria-label="X" className="grid size-8 place-items-center rounded-full text-xs font-bold text-[#bae6fd] no-underline transition-colors hover:bg-[#38bdf8]/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#bae6fd]">𝕏</a>
         </div>
       </div>
+      <a
+        href="https://wa.me/2349068994360?text=Hello%20DevNado%2C%20I%20found%20your%20work%20through%20Bukola%20Precious%27s%20portfolio%20and%20would%20like%20to%20discuss%20a%20web%20design%20or%20development%20project."
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Developed and designed by DevNado on WhatsApp"
+        className="mt-6 block border-t border-white/5 pt-5 text-center font-sans text-[10px] uppercase tracking-[.22em] text-[#e2e8f0]/45 no-underline transition-colors hover:text-[#bae6fd] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#bae6fd]"
+      >
+        Developed and designed by <span className="font-bold text-[#38bdf8]/80">DevNado</span>
+      </a>
     </div>
   </footer>
 );

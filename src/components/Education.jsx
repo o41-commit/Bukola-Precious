@@ -11,9 +11,9 @@ const Education = () => (
 
     <div className="mx-auto grid max-w-[1120px] gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-center lg:gap-16">
       <header data-scroll-reveal>
-        <div className="mb-5 font-sans text-[10px] font-semibold uppercase tracking-[.36em] text-[#38bdf8]">
+        {/* <div className="mb-5 font-sans text-[10px] font-semibold uppercase tracking-[.36em] text-[#38bdf8]">
           The foundations
-        </div>
+        </div> */}
         <h2
           id="education-title"
           className="m-0 text-[clamp(42px,6vw,72px)] font-bold leading-[1.08] tracking-[-.04em] text-[#bae6fd]"

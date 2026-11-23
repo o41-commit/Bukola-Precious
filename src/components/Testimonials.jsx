@@ -1,74 +1,60 @@
-import React from 'react';
-
-const reviews = [
-  {
-    quote: 'Bukola has a rare gift for making a quiet moment feel dangerous. I was hooked from the very first page.',
-    byline: 'Early reader · sample testimonial',
-  },
-  {
-    quote: 'Every chapter pulled me deeper into the story. The atmosphere stayed with me long after I finished reading.',
-    byline: 'Gothic fiction reader · sample testimonial',
-  },
-  {
-    quote: 'Beautifully written, unsettling in the best way, and impossible to put down. I need to know what happens next.',
-    byline: 'Beta reader · sample testimonial',
-  },
-];
-
 const Testimonials = () => (
   <section
     id="testimonials"
     aria-labelledby="testimonials-title"
-    className="relative isolate min-h-[760px] overflow-hidden bg-[#0f1d3d] px-5 py-16 text-[#bae6fd] sm:px-8 sm:py-20 lg:min-h-[913px]"
+    className="relative isolate overflow-hidden bg-[#0f1d3d] px-5 py-16 text-[#bae6fd] sm:px-8 sm:py-20 lg:py-24"
   >
-    <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_20%_35%,rgba(56,189,248,.18),transparent_42%),linear-gradient(125deg,#070b19_0%,#0f1d3d_52%,#07111f_100%)]" />
+    <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_15%_25%,rgba(56,189,248,.16),transparent_38%),radial-gradient(ellipse_at_85%_75%,rgba(96,165,250,.10),transparent_36%),linear-gradient(125deg,#070b19_0%,#0f1d3d_52%,#07111f_100%)]" />
 
     <div className="mx-auto max-w-[1120px]">
       <header data-scroll-reveal className="mb-10 text-center sm:mb-14">
-        <p className="mb-3 font-sans text-[10px] font-semibold uppercase tracking-[.4em] text-[#38bdf8]">From one reader to another</p>
-        <h2 id="testimonials-title" className="m-0 text-[clamp(42px,6vw,72px)] font-bold leading-tight text-[#38bdf8]">Words That <span className="text-white">Stay</span></h2>
+        <p className="mb-3 font-sans text-[10px] font-semibold uppercase tracking-[.38em] text-[#38bdf8]">Client & Reader Notes</p>
+        <h2 id="testimonials-title" className="m-0 text-[clamp(40px,7vw,72px)] font-bold leading-[1.05] text-[#38bdf8]">Words That <span className="text-white">Stay</span></h2>
         <p className="mx-auto mb-0 mt-4 max-w-2xl font-['Roboto_Slab',Georgia,serif] text-base leading-relaxed text-[#e2e8f0]/80 sm:text-lg">
-          A few notes from readers who stepped into Bukola’s darker worlds.
+          A few notes from the people Bukola has worked with and written for.
         </p>
       </header>
 
-      <div className="grid items-stretch gap-6 lg:grid-cols-[1.05fr_.95fr] lg:gap-8">
-        <div data-scroll-reveal="left" className="relative flex min-h-[390px] flex-col justify-between overflow-hidden rounded-sm bg-[#070b19]/70 p-7 shadow-[0_0_25px_5px_rgba(3,5,12,.45)] sm:min-h-[500px] sm:p-11">
-          <span className="absolute -right-2 -top-20 font-serif text-[300px] leading-none text-[#38bdf8]/[.08]" aria-hidden="true">“</span>
+      <div className="grid gap-5 md:grid-cols-2 md:gap-6 lg:gap-8">
+        <figure
+          data-scroll-reveal="left"
+          className="group relative m-0 flex min-h-[300px] flex-col justify-between overflow-hidden rounded-[2px] border border-[#38bdf8]/20 bg-[#070b19]/75 p-7 shadow-[0_24px_60px_rgba(2,6,23,.38)] transition duration-500 hover:-translate-y-1 hover:border-[#38bdf8]/50 sm:min-h-[340px] sm:p-10 lg:p-12"
+        >
+          <span className="absolute -right-1 -top-14 font-serif text-[220px] leading-none text-[#38bdf8]/[.07]" aria-hidden="true">“</span>
           <div className="relative">
-            <div className="mb-8 flex items-center gap-3 text-[#38bdf8]">
+            <div className="mb-7 flex items-center gap-3 text-[#38bdf8]">
               <span className="h-px w-10 bg-current" />
-              <span className="font-sans text-[10px] font-semibold uppercase tracking-[.3em]">A reader’s note</span>
+              <span className="font-sans text-[9px] font-semibold uppercase tracking-[.28em]">Client note</span>
             </div>
-            <blockquote className="m-0 max-w-[480px] font-['Merriweather',Georgia,serif] text-[clamp(24px,3vw,36px)] font-bold leading-[1.55] text-[#bae6fd]">
-              “Some stories entertain you. The best ones follow you into the dark.”
+            <blockquote className="m-0 font-['Merriweather',Georgia,serif] text-[clamp(21px,3vw,30px)] font-bold leading-[1.5] text-[#bae6fd]">
+              “She asks the right questions, learns the product fast, and delivers content that reads as if an insider wrote it. Revisions were also quick.”
             </blockquote>
           </div>
-          <div className="relative mt-10 pt-5">
-            <p className="mb-1 font-sans text-xs font-semibold uppercase tracking-[.18em] text-white">A note from the reading room</p>
-            <p className="m-0 font-['Roboto_Slab',Georgia,serif] text-sm leading-relaxed text-[#e2e8f0]/70">Sample testimonial copy — replace with a real reader quote when available.</p>
-          </div>
-          <div className="absolute bottom-7 right-8 select-none font-['Bilbo_Swash_Caps',cursive] text-4xl text-[#38bdf8]/80 sm:bottom-10 sm:right-11 sm:text-5xl">Bukola Precious</div>
-        </div>
+          <figcaption className="relative mt-9 border-t border-[#38bdf8]/15 pt-5">
+            <p className="mb-1 font-sans text-xs font-bold uppercase tracking-[.18em] text-white">Victor Tobiloba</p>
+            <p className="m-0 font-['Roboto_Slab',Georgia,serif] text-sm text-[#e2e8f0]/65">Web Developer</p>
+          </figcaption>
+        </figure>
 
-        <div className="flex flex-col gap-5">
-          {reviews.map((review, index) => (
-            <figure
-              key={review.byline}
-              data-scroll-reveal="right"
-              className="group relative m-0 flex min-h-[156px] flex-1 flex-col justify-center overflow-hidden bg-[#38bdf8] px-6 py-6 text-[#0b1329] shadow-[0_0_15px_5px_rgba(3,5,12,.45)] transition duration-500 hover:-translate-x-1 hover:bg-[#60a5fa] sm:px-8"
-              style={{ "--scroll-delay": `${index * 110}ms` }}
-            >
-              <span className="absolute -right-2 -top-5 font-serif text-[110px] leading-none text-[#0f1d3d]/10 transition-transform duration-500 group-hover:scale-110" aria-hidden="true">”</span>
-              <blockquote className="relative m-0 font-['Roboto_Slab',Georgia,serif] text-base font-semibold italic leading-[1.7] sm:text-[17px]">
-                “{review.quote}”
-              </blockquote>
-              <figcaption className="relative mt-4 font-sans text-[9px] font-bold uppercase tracking-[.2em] text-[#0f1d3d] sm:text-[10px]">
-                {review.byline}
-              </figcaption>
-            </figure>
-          ))}
-        </div>
+        <figure
+          data-scroll-reveal="right"
+          className="group relative m-0 flex min-h-[300px] flex-col justify-between overflow-hidden rounded-[2px] border border-[#38bdf8]/20 bg-[#38bdf8] p-7 text-[#0b1329] shadow-[0_24px_60px_rgba(2,6,23,.38)] transition duration-500 hover:-translate-y-1 hover:bg-[#60a5fa] sm:min-h-[340px] sm:p-10 lg:p-12"
+        >
+          <span className="absolute -right-1 -top-14 font-serif text-[220px] leading-none text-[#0f1d3d]/10" aria-hidden="true">“</span>
+          <div className="relative">
+            <div className="mb-7 flex items-center gap-3">
+              <span className="h-px w-10 bg-[#0f1d3d]" />
+              <span className="font-sans text-[9px] font-semibold uppercase tracking-[.28em]">Reader note</span>
+            </div>
+            <blockquote className="m-0 font-['Merriweather',Georgia,serif] text-[clamp(21px,3vw,30px)] font-bold leading-[1.5]">
+              “She doesn&apos;t water down technical ideas, she gives them a clear thread, so readers see why the product matters.”
+            </blockquote>
+          </div>
+          <figcaption className="relative mt-9 border-t border-[#0f1d3d]/15 pt-5">
+            <p className="mb-1 font-sans text-xs font-bold uppercase tracking-[.18em]">Olumide Solomon</p>
+            <p className="m-0 font-['Roboto_Slab',Georgia,serif] text-sm text-[#0f1d3d]/70">Reader</p>
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>

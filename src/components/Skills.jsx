@@ -106,9 +106,6 @@ const Skills = () => {
           <p className="mb-0 mt-5 max-w-[620px] font-['Roboto_Slab',Georgia,serif] text-base leading-relaxed text-[#e2e8f0]/80 sm:text-lg">
             A blend of emerging technology, sharp storytelling, and the tools to
             bring good ideas to life.{" "}
-            <span className="text-xs italic text-[#bae6fd]/80">
-              (Select any discipline to highlight its stack.)
-            </span>
           </p>
         </header>
 
@@ -318,9 +315,9 @@ const Skills = () => {
                   strokeLinecap="round"
                 />
               </svg>
-              <span className="font-['Bilbo_Swash_Caps',cursive] text-3xl tracking-wide drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)]">
+              {/* <span className="font-['Bilbo_Swash_Caps',cursive] text-3xl tracking-wide drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)]">
                 Made for meaningful work.
-              </span>
+              </span> */}
             </div>
           </section>
         </div>
